@@ -1,0 +1,222 @@
+body {
+    box-sizing: border-box;
+     /*background-color: aqua;*/
+    max-width: 1200px;
+    margin: 5px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    color: #26609c;
+    line-height: 1.2em;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+ }
+ a:visited{
+     color: blue;
+ }
+
+/* HEADER ===================  */
+header {
+    position: relative;
+    border: #7fbbf9 2px solid;
+    border-radius: 7px;
+    text-shadow: 2px 2px #fff;
+    height: 137px;
+}
+header h2, p {
+    margin: 0.5em 0;
+}
+header p {
+    line-height: 1.3em;
+}
+header div {
+    margin-left: 15%;
+    width: 50%;
+    text-align: center;
+}
+#Humber-img {
+    position: absolute;
+    z-index: -1; opacity: 0.8;
+    top: 2px; right: 0;
+    border-radius: 5px;
+    transition: all 6s ease-in-out; 
+}
+header:hover #Humber-img{
+    transform: translateX(-58vw);
+}
+
+#logo-img {
+    position: absolute;
+    z-index: -1; opacity: 0.8;
+    top: 0; left: 0;
+    transition: all 6s ease-in-out;
+}
+header:hover #logo-img{
+    transform: translateX(72vw) rotate(1080deg);
+}
+ /* End of Header ============= */
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+/* FORM ===================== */
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+
+form {
+    max-width: 45%;
+    position: relative;
+}
+form div {
+    margin-bottom: 1.2em;
+}
+textarea {
+    width: 98%;
+    height: 5em;
+    margin-top: 1em;
+}
+input, textarea, select, #submit {
+    border-radius: 3px;
+    border-color: #7fbbf9;
+}
+#name, #phone {
+    margin-left: 1em;
+    padding-left: 0.5em;
+    height:2em;
+}
+#email {
+    margin-left: 1.3em;
+    padding-left: 0.5em;
+    height:2em;
+}
+select {
+    font-size: 0.9em;
+    color: #26609c;
+}
+fieldset {
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; */
+    height: 3em;
+    border-color: #7fbbf9;
+}
+fieldset>label {
+    line-height: 2em;
+}
+
+fieldset>label:nth-child(n+3) {
+    margin-left: 1.5em;
+}
+#noradio, #nocheckbox {
+    padding:4px;
+}
+legend {
+    /* font-weight: 550; */
+}
+
+#submit {
+    height:2.2em;
+    font-size: 1em;
+    background-color:#26609c;
+    color: white;
+    margin-bottom: 0.5em;
+    transition: transform 0.5s;
+}
+#submit:hover {
+    color: #26609c;
+    background-color: #f5e768;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+#submit:active{
+    color:darkred;
+}
+#noname, #noemail  {
+    margin-left: 0.5em;
+}
+form  span { padding: 4px;}
+
+/* BUNNY ========================== */
+#bunny {
+    position: absolute; left:25px; bottom: 50px;
+    height:150px;
+    /* animation: bunny-anim 3s forwards; */
+    visibility: hidden;
+}
+
+@keyframes bunny-anim {
+    0% {transform: translateX(0) translateY(-0);}
+    10% {transform: translateX(150px) translateY(-40px);}
+    25% {transform: translateX(300px) translateY(35px);}
+    30%{ transform: translateX(300px) translateY(35px);}
+
+    40% {transform: translateX(450px) translateY(-45px);}
+    50% {transform: translateX(650px) translateY(30px);}
+    55% {transform: translateX(650px) translateY(30px);}
+
+    65% {transform: translateX(850px) translateY(-50px);}
+    75% {transform: translateX(1200px) translateY(20px);}
+    80% {transform: translateX(1200px) translateY(20px);}
+
+    100% {transform: translateX(1700px) translateY(-200px);}
+}
+
+/* SUCCESS PAGE ===================== */
+#success {
+    width: 100%; height: 95vh;
+    display: flex;
+    flex-flow: column nowrap;    
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+#success span {
+    font-family: arial;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #15aa4d;
+    font-weight: 600;
+}
+#smile {
+    margin-top: 5vh;
+    height: 100px;
+    width: 110px;
+}
+
+/* RIGHT SECTION ================== */
+
+#right-section {
+    padding: 0 1em 1em 1em;
+    line-height: 1.4em;
+    max-width: 48%;
+    min-height: 30vh;
+    border: #7fbbf9 2px solid;
+    border-radius: 7px;
+}
+#fish-img {
+    float:left;
+    margin-right: 1em;;
+    transition: all 1s;
+}
+#fish-img:hover{
+    transform: rotate(360deg);
+}
+footer {
+    text-align: center;
+    margin-top: 1.5em;
+    height:4em;
+    line-height: 4em;;
+    border: #7fbbf9 2px solid;
+    border-radius: 7px;
+}
